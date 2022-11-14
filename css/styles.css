@@ -12,6 +12,7 @@
 
 body{
     background-image: linear-gradient(to bottom right, #FFEEEE,#FFF6EA,#F7E9D7,#EBD8C3);
+   
 }
 
 
@@ -75,21 +76,35 @@ nav ul li a{
 
 /* home */
 
-
-.car-img1{
-    position: relative;
-    left: 50px;
-    top: 25px;
-
+#home .img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.img h1{
-    float: right;
-    padding-top: 14%;
-    padding-right: 6%;
+#home h1{
     font-size: 35px;
 }
 
+@media(max-width:950px){
+    #home .img{
+        flex-direction: column;
+    }
+    #home h1{
+        margin-top: 2.3rem;
+    }
+
+}
+
+@media(max-width:480px){
+    #home h1{
+        font-size: 25px;
+    }
+
+}
 
 
  
@@ -102,14 +117,25 @@ nav ul li a{
   
 }
 
+.b-j{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 4rem;
+
+}
+
+
+
 .bags{
-    float: left;
     width: 40%;
-    height: 250px;
-    padding-right: 40px;
-    margin-top: 30px;
-    position: relative;
-    left: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
     background-color: #e6ddd4;
     border:1px solid #e6ddd4;
     border-radius: 30px;
@@ -117,15 +143,30 @@ nav ul li a{
     
 }
 
+.bags h1,h3{
+    text-align: left;
+    margin-left: 1.5rem;
+    line-height: 3.5rem;
+}
+
+.bags h1{
+    font-size: 34px;
+}
+
+.bags h3{
+    font-size: 25px;
+    margin-left: 1rem;
+}
+
+
 .jewelry{
-    float: right;
     width: 40%;
-    height: 250px;
-    padding-right: 30px;
-    margin-bottom: 60px;
-    margin-top: 30px;
-    position: relative;
-    right: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
     background-color:#e6ddd4;
     border:1px solid #e6ddd4;
     border-radius: 30px;
@@ -133,95 +174,64 @@ nav ul li a{
     
 }
 
-.hoodies{
-    float: left;
+
+.jewelry h1 ,h3{
+
+    text-align: left;
+    margin-left: 3.2rem;
+    line-height: 3.3rem;
+}
+
+.jewelry h1{
+    font-size: 25px;
+}
+
+.jewelry h3{
+    font-size: 20px;
+    margin-left: 3.5rem;
+}
+
+.sale-img2{
     width: 100%;
-    height: 275px;
-    margin-bottom: 80px;
-    position: relative;
-    /* left: 84px; */
+    padding-right: 3rem;
+}
+
+
+.hoodies{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
     background-color: #e6ddd4;
     border:1px solid #e6ddd4;
     border-radius: 30px;
     backdrop-filter: blur(10px);
 }
 
-
-.sale-img1{
-    float: right;
-    position: relative;
-    top: 30px;
-    width: 40%;
-}
-.sale-img2{
-    float: right;
-    position: relative;
-    top: 40px;
-}
-
-.sale-img3{
-    float: right;
-    position: relative;
-    right: 95px;
-    top: 20px;
-    width: 11%;
-}
-
-.sale-img4{
-    float: left;
-    position: relative;
-    bottom: 95px;
-    left: 65px;
-}
-
-.bags h1,h3{
-    text-align: center;
-}
-.bags h1{
-    padding: 23px;
-    font-size: 39px;
-}
-
-
-.jewelry h1,h2{
-    text-align: center;
-
-}
-
-.jewelry h1{
-    padding: 12px;
-    font-size: 32px;
-    line-height: 3.1rem;
-}
-
 .hoodies h1{
-    position: relative;
-    left: 60px;
-    text-align: center; 
-    padding-top: 30px;
-    font-size: 35px;
+    text-align: center;
+    font-size: 34px;
+    text-align: center;
+    margin: 1.5rem 1.5rem ;
+    
 }
 
-.hoodies h2{
-    position: relative;
-    text-align: center;
-    top: 15px;
-    left: 50px;
+.hood-title{
+    margin-right: 4.5rem;
 }
+
 
 .button{
     border: none;
     background-color: #7D5A5A;
     color: #fefefe;
     padding: 15px 32px;
-    text-align: center;
+    margin: 1.5rem 1.5rem;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
     border-radius: 30px;
-    position: relative;
-    top:50px;
-    right: 45px;
     cursor: pointer;
     
 }
@@ -236,18 +246,16 @@ nav ul li a{
 
 
 .img-h1{
-    font-size: 35px;
     text-align: center;
-    position: relative;
-    top: 600px;
-    padding-bottom: 50px;
-
+    font-size: 35px;
+    margin: 1.5rem 1.5rem;
 } 
 
 
 .image-grid p{
-    position: relative;
-    top: 19px;
+    /* position: relative;
+    top: 19px; */
+    margin: 1.5rem 1.5rem;
 }
 
 .image-grid h3{
@@ -256,11 +264,14 @@ nav ul li a{
 }
 
 .kart{
-    float: right;
+    /* float: right;
     position: relative;
     bottom: 2px;
-    right: 90px;
+    right: 90px; */
     cursor: pointer;
+    text-align: right;
+    margin-right: 4rem;
+    margin-bottom: 5rem;
 } 
 
 .kart:hover{
@@ -400,7 +411,7 @@ nav ul li a{
 
 }
 
-@media(max-width:1153px){
+/* @media(max-width:1153px){
     .bags h1,h3{
         text-align: left;
         padding-left: 50px;
@@ -643,7 +654,7 @@ nav ul li a{
 
 @media(max-width:607px){
      
-}
+} */
 
 
     
