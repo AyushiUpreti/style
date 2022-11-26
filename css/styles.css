@@ -12,6 +12,7 @@
 
 body{
     background-image: linear-gradient(to bottom right, #FFEEEE,#FFF6EA,#F7E9D7,#EBD8C3);
+    background-attachment: fixed;
    
 }
 
@@ -264,14 +265,10 @@ nav ul li a{
 }
 
 .kart{
-    /* float: right;
-    position: relative;
-    bottom: 2px;
-    right: 90px; */
     cursor: pointer;
-    text-align: right;
-    margin-right: 4rem;
-    margin-bottom: 5rem;
+     display: flex;
+     flex-direction: row-reverse;
+     padding-left: 5rem;
 } 
 
 .kart:hover{
